@@ -536,8 +536,8 @@ const treksData = {
             difficulty:"Easy to Moderate – Gradual ascents with open ridges", 
             days:"1 day", 
             nearby:"Shillong, Smit, Laitlum" 
+           }
         }
-     }
     },
     //assam
     "Assam": {
@@ -565,9 +565,9 @@ const treksData = {
             difficulty:"Easy to Moderate – Forest paths and grasslands", 
             days:"1–2 days", 
             nearby:"Barpeta Road, Guwahati, Bhutan border" 
-        }
-      }    
-    },
+           }
+         }    
+      },
 
     // Nagaland
    "Nagaland": {
