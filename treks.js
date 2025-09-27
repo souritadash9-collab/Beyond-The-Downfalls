@@ -512,6 +512,7 @@ const treksData = {
 },
 //meghalaya
 "Meghalaya": {
+     "Popular Treks": {
         "Living Root Bridges (Cherrapunji & Nongriat)": { 
             description: "The Living Root Bridge trek in Meghalaya is one of India’s most unique trekking experiences. These bridges are naturally grown by guiding the roots of rubber fig trees across rivers and streams, creating sturdy pathways that last for centuries. The most famous is the Double Decker Root Bridge in Nongriat, which requires a descent of over 3,000 steps through lush valleys, waterfalls, and vibrant Khasi villages. Trekkers witness waterfalls like Rainbow Falls and Blue Lagoon, while enjoying Meghalaya’s rich culture. It’s a blend of adventure, ecology, and tradition that cannot be found anywhere else in the world.", 
             image:"images/living root bridge.webp", 
@@ -536,9 +537,11 @@ const treksData = {
             days:"1 day", 
             nearby:"Shillong, Smit, Laitlum" 
         }
+     }
     },
     //assam
     "Assam": {
+         "Popular Treks": {
         "Kaziranga National Park Trek": { 
             description: "Kaziranga, famous for the one-horned rhinoceros, also offers guided treks along forest edges and buffer zones. Trekkers can experience wetlands, tall grasslands, and riverbanks where rhinos, wild elephants, swamp deer, and migratory birds thrive. The trek offers a unique mix of adventure and wildlife photography. Unlike typical Himalayan treks, Kaziranga provides an eco-adventure blending conservation and exploration.", 
             image:"images/kazirangra.webp", 
@@ -563,6 +566,7 @@ const treksData = {
             days:"1–2 days", 
             nearby:"Barpeta Road, Guwahati, Bhutan border" 
         }
+      }    
     },
 
     // Nagaland
