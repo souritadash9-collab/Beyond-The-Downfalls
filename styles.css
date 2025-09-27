@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* Keeps the box-sizing property, which is excellent practice */
+    box-sizing: border-box; 
+    /* Changed to a more versatile and widely used sans-serif stack */
+    font-family: 'Montserrat', 'Avenir Next', sans-serif; 
+}
+
+/* Color Palette Variables for easy management */
+:root {
+    --color-primary: #5A7F8E; /* Deep Sea Blue - for main highlights */
+    --color-secondary: #B38F6F; /* Warm Sand/Taupe - for accents (used to be 'b3746c') */
+    --color-text: #2c3e50; /* Dark Charcoal - primary text color */
+    --color-background-start: #f4f6f9; /* Light Grey/Off-White */
+    --color-background-end: #e0e8f0; /* Soft Blue-Grey */
+    --color-hover: #D4B996; /* Lighter Accent for hover */
+    --color-button: #744d3f; /* Deep Rust/Brown - for buttons (used to be 'af5e55') */
+}
+
+body {
+    /* Using variables for a softer, more professional gradient */
+    background: linear-gradient(135deg, var(--color-background-start), var(--color-background-end));
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 40px 20px; /* Increased top/bottom padding */
+    min-height: 100vh; /* Ensures the gradient covers the whole page */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px; /* Increased margin */
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem); /* Responsive font size */
+    font-weight: 800; /* Slightly reduced boldness from 900 */
+    color: var(--color-secondary); /* Using the warm accent color */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 3px; /* Slightly increased for more impact */
+    /* Added a subtle text shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+header p {
+    font-size: 1.1rem; /* Slightly reduced for better readability with the body text */
+    color: var(--color-text);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+h2 {
+    color: var(--color-primary); /* Using the primary blue color */
+    font-size: 2.5rem; /* Slightly larger heading */
+    margin: 40px auto 25px auto; /* Better vertical rhythm */
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-primary); /* Subtle underline for emphasis */
+    padding-bottom: 10px;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto 40px auto; /* Increased bottom margin */
+    padding: 0;
+    max-width: 900px; /* Increased max-width for more spread */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap */
+}
+
+li {
+    background: var(--color-primary); /* Using the Deep Sea Blue color */
+    color: white;
+    padding: 15px 30px; /* Slightly more horizontal padding */
+    border-radius: 50px; /* Pill-shaped buttons for a modern look */
+    cursor: pointer;
+    font-weight: 600; /* Slightly less bold */
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother, more complex transition */
+    /* Added a subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background: var(--color-secondary); /* Hover to the warm accent color */
+    transform: translateY(-7px) rotate(1deg); /* More dynamic hover effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+button {
+    padding: 12px 25px; /* Slightly larger padding */
+    margin-bottom: 20px;
+    background-color: var(--color-button); /* Deep Rust/Brown color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Added button shadow */
+}
+
+button:hover {
+    background-color: var(--color-secondary); /* Hover to the warm accent color */
+    transform: translateY(-3px) scale(1.02); /* Slightly grow and lift */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Important for spacing */
+    margin: 0 auto 30px auto; /* Center the image and increase bottom margin */
+    border-radius: 18px; /* Slightly larger radius */
+    /* Softer, more pronounced shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); 
+    border: 5px solid white; /* Added a white border for a 'photo' effect */
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-background-end); /* Subtle separator */
+    color: #5d6d7e; /* Slightly softer color */
+    font-weight: 500; /* Less bold */
+    font-size: 0.9rem;
+}
